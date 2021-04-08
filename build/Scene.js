@@ -209,6 +209,8 @@ var DebugCamera = /** @class */ (function (_super) {
         _this.keysDown = [];
         _this.debugLines = [];
         _this.debugLines.push(function () { return "Camera Mode: " + (_this.debugOn ? 'Debug Camera' : 'Player Camera'); });
+        _this.debugLines.push(function () { return "Spacebar to toggle camera mode"; });
+        _this.debugLines.push(function () { return "Scroll to zoom, arrow keys to pan camera in debug mode"; });
         document.addEventListener('keydown', function (e) {
             _this.keysDown.push(e.key);
             // Toggle Camera type on space
