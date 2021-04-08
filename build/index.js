@@ -1,5 +1,5 @@
 import { GameWorld } from './GameWorld.js';
-import { LiveServer, ServerUpdateManager } from './ServerUtils.js';
+import { LiveServer, ServerUpdateManager, MockServer } from './ServerUtils.js';
 export var canvas = document.getElementById('game');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
