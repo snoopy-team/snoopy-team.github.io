@@ -49,7 +49,7 @@ var loadTimer = setInterval(function () {
         // Stop timer
         clearInterval(loadTimer);
         // Create update manager to serve as the in-between of the server and our game
-        var serverUpdateManager = new ServerUpdateManager(new MockServer());
+        var serverUpdateManager = new ServerUpdateManager(new ServerMock());
         // Create world with update manager and begin game
         var world = new GameWorld(serverUpdateManager);
         world.gameLoop();
